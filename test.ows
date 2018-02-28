@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="test" version="2.0">
+	<nodes>
+		<node id="0" name="SQL Table" position="(115.0, 241.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owsql.OWSql" title="SQL Table" version="" />
+		<node id="1" name="Select Columns" position="(345.0, 110.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" title="Select Columns" version="" />
+		<node id="2" name="Select Columns" position="(357.0, 339.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" title="Select Columns (1)" version="" />
+		<node id="3" name="Outliers" position="(535.0, 107.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owoutliers.OWOutliers" title="Outliers" version="" />
+		<node id="4" name="Outliers" position="(514.0, 320.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owoutliers.OWOutliers" title="Outliers (1)" version="" />
+		<node id="5" name="Python Script" position="(717.0, 115.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" title="Python Script" version="" />
+		<node id="6" name="Python Script" position="(712.0, 304.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" title="Python Script (1)" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Data" sink_node_id="1" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Data" sink_node_id="2" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="2" sink_channel="Data" sink_node_id="3" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="3" sink_channel="Data" sink_node_id="4" source_channel="Data" source_node_id="2" />
+		<link enabled="true" id="4" sink_channel="in_data" sink_node_id="6" source_channel="Outliers" source_node_id="4" />
+		<link enabled="true" id="5" sink_channel="in_data" sink_node_id="5" source_channel="Outliers" source_node_id="3" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'password': None, 'table': None, 'schema': '', 'database': '', 'port': None, 'username': None, 'sql': '', 'host': '', 'guess_values': True, 'materialize_table_name': '', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x01\x00\x00\x00\x00\x01\xd6\x00\x00\x00\xd8\x00\x00\x033\x00\x00\x02\x10\x00\x00\x01\xd9\x00\x00\x00\xf2\x00\x00\x030\x00\x00\x02\r\x00\x00\x00\x00\x00\x00', 'materialize': False, '__version__': 1, 'download': False}</properties>
+		<properties format="literal" node_id="1">{'context_settings': [], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x01\x00\x00\x00\x00\x01\x83\x00\x00\x005\x00\x00\x03\x86\x00\x00\x02\xb3\x00\x00\x01\x8b\x00\x00\x00T\x00\x00\x03~\x00\x00\x02\xab\x00\x00\x00\x00\x00\x00', 'auto_commit': True, '__version__': 1}</properties>
+		<properties format="literal" node_id="2">{'context_settings': [], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x01\x00\x00\x00\x00\x01\x83\x00\x00\x005\x00\x00\x03\x86\x00\x00\x02\xb3\x00\x00\x01\x8b\x00\x00\x00T\x00\x00\x03~\x00\x00\x02\xab\x00\x00\x00\x00\x00\x00', 'auto_commit': True, '__version__': 1}</properties>
+		<properties format="literal" node_id="3">{'gamma': 0.01, 'nu': 15, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x01\x00\x00\x00\x00\x01\xfd\x00\x00\x00\xb7\x00\x00\x03\x0c\x00\x00\x022\x00\x00\x02\x05\x00\x00\x00\xd6\x00\x00\x03\x04\x00\x00\x02*\x00\x00\x00\x00\x00\x00', 'outlier_method': 1, 'empirical_covariance': False, '__version__': 1, 'support_fraction': 1, 'cont': 26}</properties>
+		<properties format="literal" node_id="4">{'gamma': 0.01, 'nu': 15, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x01\x00\x00\x00\x00\x01\xfd\x00\x00\x00\xb7\x00\x00\x03\x0c\x00\x00\x022\x00\x00\x02\x05\x00\x00\x00\xd6\x00\x00\x03\x04\x00\x00\x02*\x00\x00\x00\x00\x00\x00', 'outlier_method': 1, 'empirical_covariance': False, '__version__': 1, 'support_fraction': 1, 'cont': 26}</properties>
+		<properties format="pickle" node_id="5">gAN9cQAoWA0AAABzcGxpdHRlclN0YXRlcQFOWBEAAABsaWJyYXJ5TGlzdFNvdXJjZXECXXEDY09y
+YW5nZS53aWRnZXRzLmRhdGEub3dweXRob25zY3JpcHQKU2NyaXB0CnEEKYFxBX1xBihYBAAAAG5h
+bWVxB1gLAAAASGVsbG8gd29ybGRxCFgGAAAAc2NyaXB0cQlYFQAAAHByaW50KCdIZWxsbyB3b3Js
+ZCcpCnEKWAgAAABmaWxlbmFtZXELTlgFAAAAZmxhZ3NxDEsAdWJhWBMAAABzYXZlZFdpZGdldEdl
+b21ldHJ5cQ1DLgHZ0MsAAQAA////+P////gAAAUSAAADBwAAAPUAAABUAAAEFAAAAqsAAAAAAgBx
+DlgLAAAAX192ZXJzaW9uX19xD0sBWAwAAABhdXRvX2V4ZWN1dGVxEIhYEgAAAGN1cnJlbnRTY3Jp
+cHRJbmRleHERSwB1Lg==
+</properties>
+		<properties format="pickle" node_id="6">gAN9cQAoWA0AAABzcGxpdHRlclN0YXRlcQFOWBEAAABsaWJyYXJ5TGlzdFNvdXJjZXECXXEDY09y
+YW5nZS53aWRnZXRzLmRhdGEub3dweXRob25zY3JpcHQKU2NyaXB0CnEEKYFxBX1xBihYBAAAAG5h
+bWVxB1gLAAAASGVsbG8gd29ybGRxCFgGAAAAc2NyaXB0cQlYFQAAAHByaW50KCdIZWxsbyB3b3Js
+ZCcpCnEKWAgAAABmaWxlbmFtZXELTlgFAAAAZmxhZ3NxDEsAdWJhWBMAAABzYXZlZFdpZGdldEdl
+b21ldHJ5cQ1OWAsAAABfX3ZlcnNpb25fX3EOSwFYDAAAAGF1dG9fZXhlY3V0ZXEPiFgSAAAAY3Vy
+cmVudFNjcmlwdEluZGV4cRBLAHUu
+</properties>
+	</node_properties>
+</scheme>
